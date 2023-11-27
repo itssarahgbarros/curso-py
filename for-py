@@ -1,0 +1,98 @@
+##a) escrever um algoritmo que 20 valores e some eles no final ##
+
+soma = 0
+for i in range(20):
+    valor=int(input("Digite um valor: "))
+    soma+=valor
+print("A soma dos valores é: ",soma)
+
+##b) entrar com 10 numeros positivos e imprimir o dobro do numero digitado ##
+
+dobro=float
+for i in range (10):
+    valor=float(input("Digite um número positivo:"))
+    dobro = valor*2
+    if valor>=0:
+        print("O dobro do numero é:",dobro)
+    else:
+        print("o numero é negativo:",valor)
+ 
+#c) Imprimir todos os número de 1 até 100 #
+
+for i in range(101):
+    print(i)
+
+#d) Criar um algoritmo que imprima todos os números de 1 até 100 e a soma deles #
+
+soma=0
+for i in range(101):
+    print(i)
+    soma+=i
+print("a soma entr eles é:",soma)  
+
+#e)e) Entrar com 10 números e imprimir a metade de cada número digitado.
+
+metade = 0
+for i in range (10):
+    num=float(input("Digite um numero positivo:"))
+    metade= num/2
+    print("A metade do numero é:",metade)
+
+##f)Entrar com um nome, idade e sexo de 20 pessoas. Imprimir o nome se a pessoa for do sexo masculino e tiver mais de 21 anos ##
+
+for i in range(20):
+    nome = str(input("Digite o nome:"))
+    idade=int(input(f"Digite a idade de {nome}:"))
+    sexo=str(input(f"Digite o sexo de {nome}[M/F]:"))
+    if idade>21 and sexo=='M':
+       print(f"Nome:{nome}")
+##g) Entrar com 12 números e imprimir a média desses números.##
+
+soma=0
+for i in range(12):
+    num=int(input(f"Digite o {i + 1}° numero:"))
+    soma+=num
+media=soma/12
+print(f"A media dos numeros é :{media}")
+
+##h) Ler 200 números inteiros e imprimir quantos são pares e quantos são impares##
+
+pares=0
+impares=0
+for i in range (10):
+    num=int(input(f"Digite o {i+1}° numero:"))
+    if num % 2 == 0:
+        pares+=1
+    else:
+        impares+=1
+print(f"A quantidade de pares é:{pares}")
+print(f"A quantidade de impares é: {impares}")      
+
+##i) Entrar com o peso e a identificação de 5 ovelhas. Ao final especifique a ovelha mais pesada e o seu número de identificação e a mais leve e o
+
+idmaispesada=0
+idmaisleve=0
+pesomaispesada=0
+pesomaisleve=0
+for i in range(5):
+    id=int(input(f"Digite o numero de identificação da {i+1}° ovelha:"))
+    peso=float(input(f"Digite o peso da ovelha {id}:"))
+    if i==1:
+        pesomaispesada=peso
+        pesomaisleve=peso
+        idmaispesada=id
+        idmaisleve=id
+    elif peso>pesomaispesada:
+        pesomaispesada = peso
+        idmaispesada = id
+    elif peso<pesomaisleve:
+        pesomaisleve=peso
+        idmaisleve=id
+print(f"A ovelha mais pesada tem o número de identificação {idmaispesada} e pesa {pesomaispesada}kgs")
+print(f"A ovelha mais leve tem o número de identifcação {idmaisleve} e peso {pesomaisleve}")
+   
+    
+
+
+    
+
